@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.5 on win32)" generated="20210110 22:46:08.034" rpa="false">
+<suite id="s1" name="TestCase" source="C:\Users\Manasa\PycharmProjects\Assignment13.1_RF\Tests\TestCase.robot">
+<test id="s1-t1" name="User should be able to Land on Book details Page">
+<kw name="Open India Bookstore" library="AddingBook">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url_books}</arg>
+<arg>${brows}</arg>
+</arguments>
+<msg timestamp="20210110 22:46:08.219" level="INFO">Opening browser 'gc' to base url 'https://www.indiabookstore.net/'.</msg>
+<status status="PASS" starttime="20210110 22:46:08.219" endtime="20210110 22:46:14.074"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210110 22:46:14.075" endtime="20210110 22:46:16.254"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:20.260" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:16.256" endtime="20210110 22:46:20.260"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, 500)</arg>
+</arguments>
+<msg timestamp="20210110 22:46:20.261" level="INFO">Executing JavaScript:
+window.scrollTo(0, 500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20210110 22:46:20.260" endtime="20210110 22:46:20.281"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step1</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:20.282" endtime="20210110 22:46:20.285"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:08.218" endtime="20210110 22:46:20.286"></status>
+</kw>
+<kw name=" Navigate to Category &quot;Fantasy &amp; Science Fiction&quot;" library="AddingBook">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${fantasy}</arg>
+</arguments>
+<msg timestamp="20210110 22:46:20.291" level="INFO">Clicking element 'xpath=//a[contains(text(),'Fantasy &amp; Science Fiction')]'.</msg>
+<status status="PASS" starttime="20210110 22:46:20.290" endtime="20210110 22:46:21.262"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:24.264" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:21.262" endtime="20210110 22:46:24.264"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step2</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:24.264" endtime="20210110 22:46:24.265"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:20.290" endtime="20210110 22:46:24.266"></status>
+</kw>
+<kw name="Search for the book title 'Frankenstein: (penguin Classics Deluxe Edition)' in the Booklist" library="AddingBook">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Select_Book}</arg>
+</arguments>
+<msg timestamp="20210110 22:46:24.268" level="INFO">Clicking element 'xpath=//*[@id="9780143105039"]/a/div[3]'.</msg>
+<status status="PASS" starttime="20210110 22:46:24.267" endtime="20210110 22:46:36.687"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:39.691" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:36.688" endtime="20210110 22:46:39.693"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step3</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:39.694" endtime="20210110 22:46:39.706"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:24.266" endtime="20210110 22:46:39.707"></status>
+</kw>
+<kw name="Review the book details" library="AddingBook">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${Book_Review}</arg>
+</arguments>
+<msg timestamp="20210110 22:46:39.710" level="INFO">Clicking element 'xpath://*[@id="main-wrapper"]/div[5]/div[2]/div[3]/div/a[1]'.</msg>
+<status status="PASS" starttime="20210110 22:46:39.709" endtime="20210110 22:46:39.906"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:42.909" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:39.906" endtime="20210110 22:46:42.909"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step4</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:42.910" endtime="20210110 22:46:42.911"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:39.708" endtime="20210110 22:46:42.911"></status>
+</kw>
+<kw name="Click on Amazon Link" library="AddingBook">
+<kw name="Select Window" library="SeleniumLibrary">
+<doc>DEPRECATED in SeleniumLibrary 4.0. , use `Switch Window` instead.</doc>
+<arguments>
+<arg>title=Buy Frankenstein (Penguin Classics Deluxe Edition) (Penguin Classics Deluxe editions) Book Online at Low Prices in India | Frankenstein (Penguin Classics Deluxe Edition) (Penguin Classics Deluxe editions) Reviews &amp; Ratings - Amazon.in</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:42.913" endtime="20210110 22:46:48.207"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:51.209" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:48.207" endtime="20210110 22:46:51.210"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step5</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:51.210" endtime="20210110 22:46:51.211"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:42.912" endtime="20210110 22:46:51.212"></status>
+</kw>
+<kw name="Add the Book to cart" library="AddingBook">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="add-to-cart-button"]</arg>
+</arguments>
+<msg timestamp="20210110 22:46:51.214" level="INFO">Clicking element 'xpath://*[@id="add-to-cart-button"]'.</msg>
+<status status="PASS" starttime="20210110 22:46:51.213" endtime="20210110 22:46:53.526"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:46:56.529" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:53.527" endtime="20210110 22:46:56.529"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Step6</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:46:56.530" endtime="20210110 22:46:56.531"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:51.213" endtime="20210110 22:46:56.532"></status>
+</kw>
+<kw name="Verify 1 item added to cart" library="AddingBook">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="hlb-view-cart-announce"]</arg>
+</arguments>
+<msg timestamp="20210110 22:46:56.538" level="INFO">Clicking element 'xpath://*[@id="hlb-view-cart-announce"]'.</msg>
+<status status="PASS" starttime="20210110 22:46:56.537" endtime="20210110 22:46:58.903"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210110 22:47:01.904" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210110 22:46:58.903" endtime="20210110 22:47:01.904"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>step7</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:47:01.904" endtime="20210110 22:47:01.905"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Pass!!</arg>
+</arguments>
+<status status="PASS" starttime="20210110 22:47:01.905" endtime="20210110 22:47:01.906"></status>
+</kw>
+<status status="PASS" starttime="20210110 22:46:56.535" endtime="20210110 22:47:01.906"></status>
+</kw>
+<tags>
+<tag>sanity</tag>
+</tags>
+<status status="PASS" starttime="20210110 22:46:08.216" endtime="20210110 22:47:01.908" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210110 22:46:08.039" endtime="20210110 22:47:01.913"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="TestCase">TestCase</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
